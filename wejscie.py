@@ -13,3 +13,4 @@ print (type(liczba))
 
 liczba_z_przecinkiem = float(input('Podaj liczbę z przecinkiem'))
 print(type(liczba_z_przecinkiem))
+
