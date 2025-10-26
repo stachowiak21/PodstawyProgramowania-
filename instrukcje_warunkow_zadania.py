@@ -29,3 +29,14 @@ elif (pisemny_j_polski + pisemny_j_obcy + pisemny_dodatkowy + ustny_j_polski + u
     print('zdałeś z amnestią')
 else:
     print('nie zdałeś!')
+
+#Zadanie 13
+ocena = int(input('Podaj ocenę z  języka obcego: '))
+test = int(input('Podaj wynik z testu języka obcego: '))
+
+if (ocena >= 5 and ocena <= 6) or (test >= 90 and test <=100):
+    print('Jesteś w grupie zaawansowanej')
+elif (ocena >= 1 and ocena <= 4) or (test >= 0 and test <= 89):
+    print('Jesteś w grupie podstawowej')
+else:
+    print('Sprawdż czy wpisałeś dobre wyniki')
