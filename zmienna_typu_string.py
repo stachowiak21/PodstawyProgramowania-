@@ -1,6 +1,6 @@
 from os.path import split
 
-from zmienne import napis
+from zmienne import napis, slownik
 
 #I. Fragment tekstu:
 #1) wycinanie od ... do
@@ -75,7 +75,7 @@ napis6 = "fiwyka"
 print(napis6)'''
 # Wniosek: String są niemutowalne, czyli nie można podmieniać pojedyńczych liter
 # Sposób na zmutowanie stringa
-napis6_lista = list(napis6)
+'''napis6_lista = list(napis6)
 print(napis6_lista)
 napis6_lista[2] = 'z'
 print(napis6_lista)
@@ -95,8 +95,57 @@ if napis9.isalpha() == True:
 else:
     print('słowo nie składa sie z liter')
 
-napis11= '1410w'
-if napis11.isdigit() == True:
+napis10= '1410w'
+if napis10.isdigit() == True:
     print('słowo składa sie z liczb')
 else:
     print('słowo nie składa sie z liczb')
+
+
+napis11 = '140w\n'
+if napis11.isalnum() == True:
+    print('słowo składa tylko się z cyfr luv liter')
+else:
+    print('słowo nie składa się tylko z cyfr lib liter')
+    '''
+
+#9. KOdy ASCII
+#9.1. ze znaku na kod ASCII
+print(ord('A'))
+
+#9.2 z kodu ASCII na znak
+print(chr(66))
+
+#Zagadka
+print(chr(ord('Z')))
+
+#10. Funkcja translate
+slownik = str.maketrans('ąęćóżśźłń', 'aecozszln')
+napis12 = 'ińfórmtyką'
+napis12_poprawny = napis12.translate(slownik)
+print(napis12_poprawny)
+
+#11. Funkcja dużych i małych literek
+napis13 = 'KoNgO'
+napis13_tylo_duze = napis13.upper()
+print(napis13_tylo_duze)
+
+napis13_tylo_male = napis13.lower()
+print(napis13_tylo_male)
+
+#12. Podstawianie ciągu znaków
+napis14 = 'Chlep kosztuje 15zł, a bułka 5 zł'
+napis14_w_euro = napis14.replace('zł','€')
+print(napis14_w_euro)
+
+#13. sortowanie i obracanie napisów
+#13.1. odwracanie napisu
+napis15 = 'kemot'
+napis15_odwrotnei = napis15[::-1]
+print(napis15_odwrotnei)
+
+#13.2. sortowanie napisu
+napis16 = 'dbca'
+napis16_posortowany = sorted(napis16)
+napis16_posortowany = ''.join(napis16_posortowany)
+print(napis16_posortowany)
