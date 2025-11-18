@@ -111,7 +111,7 @@ else:
 
 #9. KOdy ASCII
 #9.1. ze znaku na kod ASCII
-print(ord('A'))
+'''print(ord('A'))
 
 #9.2 z kodu ASCII na znak
 print(chr(66))
@@ -149,3 +149,4 @@ napis16 = 'dbca'
 napis16_posortowany = sorted(napis16)
 napis16_posortowany = ''.join(napis16_posortowany)
 print(napis16_posortowany)
+'''
