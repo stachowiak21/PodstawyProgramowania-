@@ -59,16 +59,17 @@ for i in przedzial:
 lista5.append(5)
 print(lista5)'''
 
-'''lista = [0]
+lista = [0]
 
-for i in lista:
+'''for i in lista:
     print('Cześć')
     lista.append(0)'''
 
 # Pętla while
 
-liczba = 5
+'''liczba = 5
 
 while liczba > 0:
     print(liczba)
-    liczba = liczba - 1
+    liczba = liczba - 1'''
+
