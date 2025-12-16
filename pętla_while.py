@@ -9,6 +9,7 @@ while liczba > 0: #tak długo jak liczba jest datnia(większa od zera), pętla s
     licznik = licznik + 1
 
 print(licznik)'''
+'''from wejscie import liczba'''
 
 #Zadanie 1.
 '''x = input('Podaj liczbę lub q aby zakończyć: ')
@@ -55,3 +56,49 @@ for x in range(i):
     if i >= 1:
         print(i)
         i -= 1'''
+
+#Zadnaie 6.
+'''from time import sleep
+from random import randint
+
+wynik1 = 0
+wynik2 = 0
+akcja = 0
+
+while not ((wynik1 >= 21 or wynik2 >= 21)and abs(wynik1 - wynik2 >= 2)):
+    akcja += 1
+    print(f'Akcja {akcja}')
+    #druzyna = int(input('Podaj nr drużyny, która wygrałą akcje'))
+    druzyna = randint(1, 2)
+    if druzyna ==1:
+        wynik1 += 1
+    else:
+        wynik2 += 1
+    print(f'Wynik {wynik1} : {wynik2}')
+    sleep(1)
+
+if wynik1 > wynik2:
+    print('Wygrała drużyna 1')
+else:
+    print('Wygrałą drużyna 2')'''
+
+#Zadanie 7.
+'''liczba = int(input('Podaj liczbe'))
+
+while liczba > 0:
+    cyfra = liczba % 10
+    liczba = liczba // 10
+    print(cyfra, end = '')'''
+
+#Zadanie 8.
+liczba = int(input('Podaj liczbe.'))
+
+d = 2
+ile_czyn = 0
+
+while liczba > 1:
+    while liczba % d == 0:
+        liczba = liczba // d
+        ile_czyn += 1
+    d += 1
+print(ile_czyn)

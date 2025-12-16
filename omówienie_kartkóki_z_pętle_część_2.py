@@ -27,7 +27,7 @@ print(licznik)
 
 #Zadanie 3.
 
-n = int(input('Podaj ile będzie napisów'))
+'''n = int(input('Podaj ile będzie napisów'))
 max_napis = ''
 
 for x in range(n):
@@ -36,4 +36,4 @@ for x in range(n):
     max_ile_a = max_napis.count('a')
     if ile_a > max_ile_a:
         max_napis = napis
-print(max_napis)
+print(max_napis)'''
