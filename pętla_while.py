@@ -98,7 +98,7 @@ ile_czyn = 0
 
 while liczba > 1:
     while liczba % d == 0:
-        liczba = liczba // d
+        liczba = liczba // 
         ile_czyn += 1
     d += 1
 print(ile_czyn)
@@ -106,22 +106,15 @@ print(ile_czyn)
 #Zadnie 5.
 x = 0
 y = 0
+r = ''
 
-while True:
-    r = input("Ruch: ")
+while r != 'q':
+    r = input("Ruch")
 
-    if r == 'q':
-        print("Koniec")
-        break
-
-    if r == 'g' and y < 9:
-        x += 1
-    elif r == 'd' and x > 0:
-        y -= 1
-    elif r == 'p' and x < 9:
-        x += 1
-    else:
-        print("Niemożliwe")
-        continue
+    if r == 'g' and y < 9: y += 1
+    elif r == 'd' and x > 0: y -= 1
+    elif r == 'l' and y > 0: x -= 1
+    elif r == 'q': print("Koniec"); break
+    else: print("Niemożliwe"); continue
 
     print((x, y))
