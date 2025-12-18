@@ -102,3 +102,26 @@ while liczba > 1:
         ile_czyn += 1
     d += 1
 print(ile_czyn)
+
+#Zadnie 5.
+x = 0
+y = 0
+
+while True:
+    r = input("Ruch: ")
+
+    if r == 'q':
+        print("Koniec")
+        break
+
+    if r == 'g' and y < 9:
+        x += 1
+    elif r == 'd' and x > 0:
+        y -= 1
+    elif r == 'p' and x < 9:
+        x += 1
+    else:
+        print("Niemożliwe")
+        continue
+
+    print((x, y))
