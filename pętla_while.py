@@ -90,31 +90,39 @@ while liczba > 0:
     liczba = liczba // 10
     print(cyfra, end = '')'''
 
-#Zadanie 8.
-liczba = int(input('Podaj liczbe.'))
-
-d = 2
-ile_czyn = 0
-
-while liczba > 1:
-    while liczba % d == 0:
-        liczba = liczba // 
-        ile_czyn += 1
-    d += 1
-print(ile_czyn)
-
 #Zadnie 5.
-x = 0
-y = 0
-r = ''
+from random import randint
 
-while r != 'q':
-    r = input("Ruch")
+x, y = 0, 0
+ruchy = ['p'] * 10 + ['d'] * 5 + ['l'] * 5 + ['g'] * 10 + ['q']
+print(ruchy)
 
-    if r == 'g' and y < 9: y += 1
-    elif r == 'd' and x > 0: y -= 1
-    elif r == 'l' and y > 0: x -= 1
-    elif r == 'q': print("Koniec"); break
-    else: print("Niemożliwe"); continue
+while True:
+    ruch = ruchy[randint(0, len(ruchy) - 1)]
 
-    print((x, y))
+    if ruch == 'q':
+        break
+    elif ruch == 'g':
+        if y < 9:
+            y += 1
+        else:
+            print('Niemożliwy ruch')
+    elif ruch == 'd':
+        if y > 0:
+            y -= 1
+        else:
+            print('Niemożliwy ruch')
+    elif ruch == 'p':
+        if x < 9:
+            x += 1
+        else:
+            print('Niemożliwy ruch')
+    elif ruch == 'l':
+        if x > 0:
+            x -= 1
+        else:
+            print('Niemożliwy ruch')
+    else:
+        print('Nieznany ruch')
+
+    print(f'({x}, {y})')
