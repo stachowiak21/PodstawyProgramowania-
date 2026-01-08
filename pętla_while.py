@@ -91,7 +91,7 @@ while liczba > 0:
     print(cyfra, end = '')'''
 
 #Zadnie 5.
-from random import randint
+'''from random import randint
 
 x, y = 0, 0
 ruchy = ['p'] * 10 + ['d'] * 5 + ['l'] * 5 + ['g'] * 10 + ['q']
@@ -125,4 +125,4 @@ while True:
     else:
         print('Nieznany ruch')
 
-    print(f'({x}, {y})')
+    print(f'({x}, {y})')'''
