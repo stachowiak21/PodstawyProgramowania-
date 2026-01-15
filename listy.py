@@ -66,3 +66,4 @@ print(lista12)
 lista13 = [5, 1, 8, 3, 9, 10]
 del lista13[2]
 print(lista13)
+
