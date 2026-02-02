@@ -62,3 +62,25 @@ print(lista1)'''
 lista1 = [x for x in lista1 if x != 2]
 
 print(lista1)
+
+#j)
+'''lista3 = [x ** 2 for x in lista1 ]'''
+lista3 = []
+for x in lista1:
+    lista3.append(x ** 2)
+print(lista3)
+
+#Zadanie 2
+'''lista4 = [178, 192, 184, 182, 180, 179, 186, 190, 191, 191]
+
+x_max = max(lista4)
+x_min = min(lista4)
+
+lista_norm = [(x - x_min) / (x_max - x_min) for x in lista4]
+print(lista_norm)'''
+
+#Zadanie 3
+lista5 = [123, 89, 5600, 432, 11, 45, 900, 12450, 1410, 390, 9999]
+'''lista5 = [x for x in lista5 if x < 1000 or x > 9999]'''
+lista5 = [x for x in lista5 if not (x >= 1000 and x <= 9999)]
+print(lista5)
