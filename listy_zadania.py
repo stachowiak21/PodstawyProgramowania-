@@ -1,4 +1,4 @@
-#Zadanie. 1
+'''#Zadanie. 1
 lista1 = [12, -9, 6, 2, 8, 1, 15, -7, 0, 1, 1, 2, 2, -7, 2, 1, -7, 2]
 lista2 = [['pies', 'wilk'], ['kot domowy', 'tygrys', 'lew'], 'kapibara', 'mrówka', ['rekin', 'śledź', 'pstrąg']]
 
@@ -16,32 +16,32 @@ print(slowo)
 
 #c)
 lista3 = lista1[2::2]
-print(lista3)
+print(lista3)'''
 
 #d)
 '''lista_a = [1, 2, 3]
 lista_b = [4, 5, 6]
 lista_a.append(lista_b)
 print(lista_a)'''
-lista2.append(lista2[1] * 3)
+'''lista2.append(lista2[1] * 3)
 print(lista2)
 
 #e)
 lista1 = lista1 + [9, 6, 16, -8, 7]
 print(lista1)
-
+'''
 #f)
 
 #sposob 1.
 
 #lista1.sort()
-lista1_posortowana = sorted(lista1)
+'''lista1_posortowana = sorted(lista1)
 print(lista1_posortowana[0], lista1_posortowana[-1])
 
 #sposob 2.
 
 print(min(lista1))
-print(max(lista1))
+print(max(lista1))'''
 
 #g)
 '''del  lista1[4]
@@ -59,17 +59,17 @@ print(lista1)'''
 
 #drugi sposób
 
-lista1 = [x for x in lista1 if x != 2]
+'''lista1 = [x for x in lista1 if x != 2]
 
 print(lista1)
 
 #j)
-'''lista3 = [x ** 2 for x in lista1 ]'''
+lista3 = [x ** 2 for x in lista1 ]
 lista3 = []
 for x in lista1:
     lista3.append(x ** 2)
 print(lista3)
-
+'''
 #Zadanie 2
 '''lista4 = [178, 192, 184, 182, 180, 179, 186, 190, 191, 191]
 
@@ -79,8 +79,8 @@ x_min = min(lista4)
 lista_norm = [(x - x_min) / (x_max - x_min) for x in lista4]
 print(lista_norm)'''
 
-#Zadanie 3
+'''#Zadanie 3
 lista5 = [123, 89, 5600, 432, 11, 45, 900, 12450, 1410, 390, 9999]
-'''lista5 = [x for x in lista5 if x < 1000 or x > 9999]'''
-lista5 = [x for x in lista5 if not (x >= 1000 and x <= 9999)]
-print(lista5)
+lista5 = [x for x in lista5 if x < 1000 or x > 9999]
+lista5 = [x for x in lista5 if not (x > 1000 and x <= 9999)]
+print(lista5)''' 
