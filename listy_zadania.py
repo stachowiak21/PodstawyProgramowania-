@@ -84,3 +84,62 @@ lista5 = [123, 89, 5600, 432, 11, 45, 900, 12450, 1410, 390, 9999]
 lista5 = [x for x in lista5 if x < 1000 or x > 9999]
 lista5 = [x for x in lista5 if not (x > 1000 and x <= 9999)]
 print(lista5)''' 
+
+#Zadanie 8.
+'''lista = [1, 5, 1, 2, 2, 1, 6, 7, 3, 2, 2, 1, 1, 4]
+
+zbior = []
+for liczba in lista:
+    if liczba not in zbior:
+        zbior.append(liczba)
+
+print(zbior)
+
+for unikalna in zbior:
+    ile = 0
+    for liczba in lista:
+        if liczba == unikalna:
+            ile = ile + 1
+    print(unikalna, ":", ile)'''
+
+#Zadanie 9.
+'''plecak = [
+    ("książka", 1.2),
+    ("zeszyt", 0.5),
+    ("laptop", 2.5),
+    ("piórnik", 0.3),
+    ("butelka z wodą", 1.0),
+    ("strój sportowy", 1.8)
+]
+
+a = []
+b = []
+c = 0
+d = []
+
+for x in plecak:
+    if x[1] < 1.0:
+        a.append(x[0])
+
+    b.append(x[1] * 1.1)
+
+    if x[1] > 1.5:
+        c =  + 1
+
+    if x[1] <= 1.5 in len(x[0]) > 5:
+        d.append(x[0])
+
+print(a)
+print(b)
+print(c)
+print(d)'''
+
+#Zadanie 10.
+
+#Program 1. Nie wiem
+
+#Program 2. Program wyświetli słowo False, ponieważ funkcja all sprawdza, czy wszystkie liczby są parzyste, a na liście znajdują się też liczby nieparzyste.
+
+#Program 3. Efektem będzie lista, która na samym końcu ma dodaną drugą listę jako jeden, wspólny element (czyli mamy listę wewnątrz listy).
+
+#Program 4. Efektem będzie jedna, długa lista, do której po prostu dopisano (doklejono) liczby 9, 10 i 11 jako osobne elementy.
