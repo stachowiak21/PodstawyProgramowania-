@@ -38,12 +38,11 @@ def czy_anagramy(s1, s2):
     '''return sorted(s1) == sorted(2)'''#Krutsza opcja
 
 #print(czy_anagramy('nosek', 'keson'))
-
 '''s1 = 'nosek'
 s2 - 'keson'
 print(sorted(s1) == sorted(s2))'''
-
-'''def jaki_trojkat(a, b, c):
+'''
+def jaki_trojkat(a, b, c):
     if a + b + c > 2 * max([a, b, c]):
         if a ** 2 + b ** 2 == c ** 2 == 2 * max([a, b, c]):
             print('prostokątny')
@@ -54,4 +53,17 @@ print(sorted(s1) == sorted(s2))'''
     else:
         print('to nie jest trójkąt')
 
-jaki_trojkat(7, 10, 1)'''
+def liczby_niezalezne(lista):
+    wynik = []
+    for e in lista:
+        dzielniki = []
+        for l in lista:
+            if e % l == 0:
+                dzielniki.append(l)
+        if len(dzielniki) == 1:
+            wynik.append(e)
+    return  wynik
+print(liczby_niezalezne([12, 7, 3, 6, 21, 74]))'''
+
+
+#Zadanie domowe 2.4 , 2.5 , 2.6 , 2.7 , i 2.8
