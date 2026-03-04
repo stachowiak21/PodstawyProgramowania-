@@ -43,12 +43,15 @@ def czy_anagramy(s1, s2):
 s2 - 'keson'
 print(sorted(s1) == sorted(s2))'''
 
-def jaki_trojkat(a, b, c):
-    if a ** 2 + b ** 2 == c ** 2 == 2 * max([a, b, c]):
-        print('prostokątny')
-    elif a ** 2 + b ** 2 == c ** 2 > 2 * max([a, b, c]):
-        print('ostrokątny')
-    elif a ** 2 + b ** 2 == c ** 2 < 2 * max([a, b, c]):
-        print('rozwartokątny')
+'''def jaki_trojkat(a, b, c):
+    if a + b + c > 2 * max([a, b, c]):
+        if a ** 2 + b ** 2 == c ** 2 == 2 * max([a, b, c]):
+            print('prostokątny')
+        elif a ** 2 + b ** 2 == c ** 2 > 2 * max([a, b, c]):
+            print('ostrokątny')
+        elif a ** 2 + b ** 2 == c ** 2 < 2 * max([a, b, c]):
+            print('rozwartokątny')
+    else:
+        print('to nie jest trójkąt')
 
-jaki_trojkat(7, 10, 1)
+jaki_trojkat(7, 10, 1)'''

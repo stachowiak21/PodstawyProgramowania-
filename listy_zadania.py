@@ -143,3 +143,4 @@ print(d)'''
 #Program 3. Efektem będzie lista, która na samym końcu ma dodaną drugą listę jako jeden, wspólny element (czyli mamy listę wewnątrz listy).
 
 #Program 4. Efektem będzie jedna, długa lista, do której po prostu dopisano (doklejono) liczby 9, 10 i 11 jako osobne elementy.
+
