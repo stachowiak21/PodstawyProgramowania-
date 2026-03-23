@@ -77,7 +77,7 @@ print(liczby_niezalezne([12, 7, 3, 6, 21, 74]))'''
 print(ile_cyfr(127))'''
 
 #Zadanie 2.6
-
+'''
 def unikatowe_elementy(l1, l2):
     zbior = set()
     l = l1 + l2
@@ -86,4 +86,4 @@ def unikatowe_elementy(l1, l2):
             zbior.add(x)
     return zbior
 
-print(unikatowe_elementy([1, 2, 6, 4, 5], [8, 4, 5, 2]) )
+print(unikatowe_elementy([1, 2, 6, 4, 5], [8, 4, 5, 2]) )'''
