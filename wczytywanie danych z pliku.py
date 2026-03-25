@@ -36,5 +36,5 @@ for i in range(len(dane5)):
 
 print(dane5)'''
 
-dane5_prim = [list(map(int, w.split())) for w in open('dane5.txt')]
-print(dane5_prim)
+'''dane5_prim = [list(map(int, w.split())) for w in open('dane5.txt')]
+print(dane5_prim)'''
