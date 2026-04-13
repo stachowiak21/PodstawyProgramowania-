@@ -48,3 +48,4 @@ for i in range(1, len(dane)):
     wynik.append((czas, szybkosc_sr))
 
 print(wynik)
+
